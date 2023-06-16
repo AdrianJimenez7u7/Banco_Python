@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>900</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Banco</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../MSC23_4_1_SEGUNDO_ANA/Recursos/user_24.png</normaloff>../../MSC23_4_1_SEGUNDO_ANA/Recursos/user_24.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#5c5470;</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="flsFormulario">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>861</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #dbd8e3;
+border-radius: 10px;</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>10</y>
+       <width>431</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(119, 98, 140);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="title">
+      <string>Busquedas y Modificaciones</string>
+     </property>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>411</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #dbd8e3;
+border-radius: 10px;</string>
+      </property>
+      <property name="title">
+       <string>Buscar Cuenta</string>
+      </property>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;</string>
+       </property>
+       <property name="text">
+        <string>Numero Cuenta: </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lneNoControlBuscar">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>20</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+color: black;</string>
+       </property>
+       <property name="maxLength">
+        <number>8</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="psbBuscar">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>17</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;
+</string>
+       </property>
+       <property name="text">
+        <string>Buscar</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>411</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #dbd8e3;
+border-radius: 10px;</string>
+      </property>
+      <property name="title">
+       <string>Abonar</string>
+      </property>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;</string>
+       </property>
+       <property name="text">
+        <string>Cantidad: </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lneAbono">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>20</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+color: black;</string>
+       </property>
+       <property name="maxLength">
+        <number>8</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="psbAbonar">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>17</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;
+</string>
+       </property>
+       <property name="text">
+        <string>Abonar</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>411</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #dbd8e3;
+border-radius: 10px;</string>
+      </property>
+      <property name="title">
+       <string>Retiro</string>
+      </property>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;</string>
+       </property>
+       <property name="text">
+        <string>Cantidad: </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lneRetirar">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>20</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+color: black;</string>
+       </property>
+       <property name="maxLength">
+        <number>8</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="psbRetirar">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>17</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;
+</string>
+       </property>
+       <property name="text">
+        <string>Retirar</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>411</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #dbd8e3;
+border-radius: 10px;</string>
+      </property>
+      <property name="title">
+       <string>Credito</string>
+      </property>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;</string>
+       </property>
+       <property name="text">
+        <string>Disponible: </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lneCreditoModificar">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>20</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+color: black;</string>
+       </property>
+       <property name="maxLength">
+        <number>8</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="psbModificar">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>17</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;
+</string>
+       </property>
+       <property name="text">
+        <string>Modificar</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>401</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(119, 98, 140);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="title">
+      <string>DATOS:</string>
+     </property>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;
+</string>
+      </property>
+      <property name="text">
+       <string>Credito: </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lneCredito">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>170</y>
+        <width>231</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;</string>
+      </property>
+      <property name="text">
+       <string>Apellidos: </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lneApellidos">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>80</y>
+        <width>231</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;</string>
+      </property>
+      <property name="text">
+       <string>Nombre: </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lneNombre">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>50</y>
+        <width>231</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+color: black;</string>
+      </property>
+      <property name="maxLength">
+       <number>8</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;</string>
+      </property>
+      <property name="text">
+       <string>Numero Cuenta: </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lneNoCuenta">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>20</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+color: black;</string>
+      </property>
+      <property name="maxLength">
+       <number>8</number>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cmbTipoCuenta">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>140</y>
+        <width>231</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;
+</string>
+      </property>
+      <property name="text">
+       <string>Tipo Cuenta: </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="psbAgregar">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>210</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;
+</string>
+      </property>
+      <property name="text">
+       <string>Agregar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;
+</string>
+      </property>
+      <property name="text">
+       <string>Saldo: </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lneSaldo">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>110</y>
+        <width>231</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="psbAgregar_2">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+Color: black;
+</string>
+      </property>
+      <property name="text">
+       <string>Guardar Cambios</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTableView" name="tblClientes">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>861</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #dbd8e3;
+border-radius: 10px;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(42, 36, 56);
+color: white;</string>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(42, 36, 56);</string>
+    </property>
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionNuevo_2"/>
+    <addaction name="actionAgregar_2"/>
+    <addaction name="actionEliminar_2"/>
+    <addaction name="actionActualizar_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuAcciones">
+    <property name="title">
+     <string>Acciones</string>
+    </property>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuAcciones"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(42, 36, 56);</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNuevo"/>
+   <addaction name="actionAgregar"/>
+   <addaction name="actionEliminar"/>
+   <addaction name="actionActualizar"/>
+   <addaction name="actionConsultar"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionSalir">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../MSC23_4_1_SEGUNDO_ANA/Recursos/log_out_24.png</normaloff>../../MSC23_4_1_SEGUNDO_ANA/Recursos/log_out_24.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionConsultar">
+   <property name="icon">
+    <iconset>
+     <normaloff>iconos/icons8-buscar-cliente-30.png</normaloff>iconos/icons8-buscar-cliente-30.png</iconset>
+   </property>
+   <property name="text">
+    <string>Consultar</string>
+   </property>
+  </action>
+  <action name="actionNuevo">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../JimenezBarajas_ISC_4A_4_1/Recursos/new_24.png</normaloff>../../JimenezBarajas_ISC_4A_4_1/Recursos/new_24.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionAgregar">
+   <property name="icon">
+    <iconset>
+     <normaloff>iconos/icons8-agregar-usuario-masculino-50.png</normaloff>iconos/icons8-agregar-usuario-masculino-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Agregar</string>
+   </property>
+  </action>
+  <action name="actionActualizar">
+   <property name="icon">
+    <iconset>
+     <normaloff>iconos/icons8-refrescar-30.png</normaloff>iconos/icons8-refrescar-30.png</iconset>
+   </property>
+   <property name="text">
+    <string>Actualizar</string>
+   </property>
+  </action>
+  <action name="actionEliminar">
+   <property name="icon">
+    <iconset>
+     <normaloff>iconos/icons8-eliminar-50.png</normaloff>iconos/icons8-eliminar-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Eliminar</string>
+   </property>
+  </action>
+  <action name="actionAyuda">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../JimenezBarajas_ISC_4A_4_1/Recursos/help_24.png</normaloff>../../JimenezBarajas_ISC_4A_4_1/Recursos/help_24.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ayuda</string>
+   </property>
+  </action>
+  <action name="actionNuevo_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../JimenezBarajas_ISC_4A_4_1/Recursos/new_24.png</normaloff>../../JimenezBarajas_ISC_4A_4_1/Recursos/new_24.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionAgregar_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>iconos/icons8-agregar-usuario-masculino-50.png</normaloff>iconos/icons8-agregar-usuario-masculino-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Agregar</string>
+   </property>
+  </action>
+  <action name="actionEliminar_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>iconos/icons8-eliminar-50.png</normaloff>iconos/icons8-eliminar-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Eliminar</string>
+   </property>
+  </action>
+  <action name="actionActualizar_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>iconos/icons8-refrescar-30.png</normaloff>iconos/icons8-refrescar-30.png</iconset>
+   </property>
+   <property name="text">
+    <string>Actualizar</string>
+   </property>
+  </action>
+  <action name="actionConsultar_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>iconos/icons8-buscar-cliente-30.png</normaloff>iconos/icons8-buscar-cliente-30.png</iconset>
+   </property>
+   <property name="text">
+    <string>Habilitar Busqueda</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>lneNoCuenta</tabstop>
+  <tabstop>lneNombre</tabstop>
+  <tabstop>lneApellidos</tabstop>
+  <tabstop>lneCredito</tabstop>
+  <tabstop>cmbTipoCuenta</tabstop>
+  <tabstop>tblClientes</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
